@@ -1,9 +1,15 @@
 import React from 'react';
 
-import { Container } from './styles';
+import AppContainer from '../../components/AppContainer';
+
+// import { Container } from './styles';
 
 const Appointments: React.FC = () => {
-  return <Container>Appointments</Container>;
+  return (
+    <>
+      <AppContainer>Appointments</AppContainer>
+    </>
+  );
 };
 
 export default Appointments;
