@@ -7,22 +7,22 @@ export const SideMenu = styled.div`
   flex-direction: column;
 
   a {
-    height: 50px;
-    max-width: 230px;
+    height: 5rem;
+    max-width: 23rem;
     border-radius: 10px;
 
     text-align: center;
-    line-height: 50px;
+    line-height: 5rem;
 
     background-color: #c4c4c4;
     color: #fff;
   }
 
   & > input {
-    height: 30px;
-    max-width: 230px;
+    height: 3rem;
+    max-width: 23rem;
 
-    margin-top: 30px;
+    margin-top: 3rem;
   }
 
   input {
@@ -33,10 +33,10 @@ export const SideMenu = styled.div`
   }
 
   h3 {
-    margin-top: 30px;
+    margin-top: 3rem;
 
     color: #adadad;
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 
   div {
@@ -59,7 +59,7 @@ export const MainContent = styled.div`
   border: 2px solid blue;
 
   h1 {
-    font-size: 24px;
-    margin-bottom: 24px;
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
   }
 `;

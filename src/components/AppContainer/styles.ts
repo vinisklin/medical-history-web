@@ -3,17 +3,17 @@ import styled from 'styled-components';
 export const Container = styled.div`
   max-width: 1170px;
   width: 90vw;
-  margin: 10px auto;
+  margin: 1rem auto;
 `;
 
 export const AppHeader = styled.header`
-  height: 100px;
+  height: 10rem;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  font-size: 24px;
+  font-size: 2.4rem;
 
   a {
     flex: 1;
@@ -28,7 +28,7 @@ export const TabContainer = styled.div`
 
   a {
     height: 100%;
-    max-width: 370px;
+    max-width: 37rem;
 
     background: #f8f8ff;
     border-top-left-radius: 10px;
@@ -39,7 +39,7 @@ export const TabContainer = styled.div`
     justify-content: center;
 
     & + a {
-      margin-left: 30px;
+      margin-left: 3rem;
     }
   }
 `;
@@ -48,7 +48,7 @@ export const Content = styled.div`
   min-height: 600px;
   border-radius: 10px;
   border-top-left-radius: 0px;
-  padding: 50px 70px;
+  padding: 4rem 7rem;
 
   display: flex;
 

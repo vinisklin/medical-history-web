@@ -1,6 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
+  html {
+    font-size: 62.5%;
+  }
+
   * {
     margin: 0;
     padding: 0;
@@ -16,7 +20,7 @@ export default createGlobalStyle`
 
   body, input, button {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 
   h1, h2, h3, h4, h5, h6, strong {
@@ -30,5 +34,19 @@ export default createGlobalStyle`
   a {
     text-decoration: none;
     color: #000;
+  }
+
+  /* Tablet */
+  @media (max-width: 1080px) {
+    html {
+      font-size: 58%;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 720px) {
+    html {
+      font-size: 54%;
+    }
   }
 `;
