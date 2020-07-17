@@ -5,6 +5,7 @@ import SignIn from '../pages/SignIn';
 import SignUp from '../pages/SignUp';
 
 import Appointments from '../pages/Appointments';
+import Exams from '../pages/Exams';
 
 const Routes: React.FC = () => (
   <Switch>
@@ -12,6 +13,7 @@ const Routes: React.FC = () => (
     <Route path="/signup" component={SignUp} />
 
     <Route path="/appointments" component={Appointments} />
+    <Route path="/exams" component={Exams} />
   </Switch>
 );
 

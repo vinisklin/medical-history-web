@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { Container, AppHeader, TabContainer, Content } from './styles';
 
@@ -7,11 +8,11 @@ const AppContainer: React.FC = ({ children }) => {
     <Container>
       <AppHeader>
         <TabContainer>
-          <a href="/#">CONSULTAS</a>
-          <a href="/#">EXAMES</a>
+          <Link to="/appointments">CONSULTAS</Link>
+          <Link to="/exams">EXAMES</Link>
         </TabContainer>
-        <a href="/#">CONFIG</a>
-        <a href="/#">SAIR</a>
+        <Link to="/#">CONFIG</Link>
+        <Link to="/#">SAIR</Link>
       </AppHeader>
       <Content>{children}</Content>
     </Container>

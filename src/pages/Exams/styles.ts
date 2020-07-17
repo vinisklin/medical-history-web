@@ -72,7 +72,7 @@ export const MainContent = styled.div`
   }
 `;
 
-export const AppointmentsHeader = styled.div`
+export const ExamsHeader = styled.div`
   min-width: 50rem;
   width: 90%;
 
@@ -87,7 +87,7 @@ export const AppointmentsHeader = styled.div`
   }
 `;
 
-export const AppointmentRow = styled.div`
+export const ExamRow = styled.div`
   min-width: 50rem;
   width: 90%;
   height: 8rem;
