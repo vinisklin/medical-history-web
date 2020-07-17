@@ -56,10 +56,69 @@ export const MainContent = styled.div`
   max-width: 700px;
   flex: 9;
 
-  border: 2px solid blue;
-
   h1 {
     font-size: 2.4rem;
     margin-bottom: 2.4rem;
+  }
+
+  .double-size {
+    flex: 2;
+    margin-right: 10px;
+  }
+
+  .single-size {
+    flex: 1;
+    margin-right: 10px;
+  }
+`;
+
+export const AppointmentsHeader = styled.div`
+  min-width: 50rem;
+  width: 90%;
+
+  display: flex;
+
+  border-bottom: 1px solid #adadad;
+
+  h2 {
+    font-size: 1.8rem;
+    color: #adadad;
+    padding-bottom: 1rem;
+  }
+`;
+
+export const AppointmentRow = styled.div`
+  min-width: 50rem;
+  width: 90%;
+  height: 8rem;
+
+  display: flex;
+  align-items: center;
+
+  border-bottom: 1px solid #adadad;
+  background-color: #f8f8ff;
+  transition: transform ease-out 0.2s;
+
+  &:hover {
+    transform: scale(1.03);
+    border-top: 1px solid #adadad;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  span {
+    padding: 0 3px;
+    border: 1px solid #adadad;
+    border-radius: 25px;
+
+    font-size: 1.2rem;
+    color: #adadad;
+    text-align: center;
   }
 `;

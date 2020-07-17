@@ -2,7 +2,12 @@ import React from 'react';
 
 import AppContainer from '../../components/AppContainer';
 
-import { SideMenu, MainContent } from './styles';
+import {
+  SideMenu,
+  MainContent,
+  AppointmentsHeader,
+  AppointmentRow,
+} from './styles';
 
 const Appointments: React.FC = () => {
   return (
@@ -45,6 +50,41 @@ const Appointments: React.FC = () => {
 
       <MainContent>
         <h1>3 CONSULTAS</h1>
+
+        <AppointmentsHeader>
+          <h2 className="double-size">CONSULTA</h2>
+          <h2 className="double-size">MOTIVO</h2>
+          <h2 className="single-size">DATA</h2>
+          <h2 className="single-size">STATUS</h2>
+        </AppointmentsHeader>
+
+        <AppointmentRow>
+          <div className="double-size">
+            <h3>Cardiologista</h3>
+            <p>Dr. Drauzio Varella</p>
+          </div>
+          <h3 className="double-size">Dor no peito</h3>
+          <h3 className="single-size">14/07/20</h3>
+          <span className="single-size">Aguard. exame</span>
+        </AppointmentRow>
+        <AppointmentRow>
+          <div className="double-size">
+            <h3>Cardiologista</h3>
+            <p>Dr. Drauzio Varella</p>
+          </div>
+          <h3 className="double-size">Coração acelerado</h3>
+          <h3 className="single-size">26/02/20</h3>
+          <span className="single-size">Finalizado</span>
+        </AppointmentRow>
+        <AppointmentRow>
+          <div className="double-size">
+            <h3>Cardiologista</h3>
+            <p>Dr. Gregory House</p>
+          </div>
+          <h3 className="double-size">Coração batendo mais forte</h3>
+          <h3 className="single-size">13/04/18</h3>
+          <span className="single-size">Finalizado</span>
+        </AppointmentRow>
       </MainContent>
     </AppContainer>
   );
